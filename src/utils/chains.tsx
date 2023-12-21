@@ -1,21 +1,21 @@
 import { Chain } from 'wagmi';
 
-export const KlaytnBaobab = {
-  id: 1001,
-  name: 'Klaytn Baobab',
-  network: 'Klaytn Baobab',
+export const ModeMainnet = {
+  id: 34443,
+  name: 'Mode Mainnet',
+  network: 'MODE',
   nativeCurrency: {
     decimals: 18,
-    name: 'KLAY',
-    symbol: 'KLAY',
+    name: 'Ether',
+    symbol: 'ETH',
   },
   rpcUrls: {
-    public: { http: ['https://public-en-baobab.klaytn.net'] },
-    default: { http: ['https://public-en-baobab.klaytn.net'] },
+    public: { http: ['https://mainnet.mode.network'] },
+    default: { http: ['https://mainnet.mode.network'] },
   },
   blockExplorers: {
-    etherscan: { name: 'Klatyn Scan', url: 'https://baobab.scope.klaytn.com' },
-    default: { name: 'Klatyn Scan', url: 'https://baobab.scope.klaytn.com' },
+    etherscan: { name: 'MODE Scan', url: 'https://explorer.mode.network/' },
+    default: { name: 'MODE Scan', url: 'https://explorer.mode.network/' },
   },
 
 } as const satisfies Chain

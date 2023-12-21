@@ -20,11 +20,12 @@ import {
   walletConnectWallet,
   coinbaseWallet,
 } from '@rainbow-me/rainbowkit/wallets';
-import { polygonZkEvm, polygonZkEvmTestnet } from 'wagmi/chains'
+import { modeTestnet} from 'wagmi/chains'
+import { ModeMainnet } from './utils/chains.js'
 
 const projectId = "274de4271228fdd69013c56274f0e688";
 const { chains, publicClient } = configureChains(
-  [ polygonZkEvm, polygonZkEvmTestnet],
+  [ ModeMainnet, modeTestnet ],
   [
     publicProvider()
   ]
