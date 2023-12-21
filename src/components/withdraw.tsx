@@ -234,20 +234,11 @@ export function Withdraw() {
       let fee = gasLimit * gasPrice;
       const originalBalance = parseEther(bal.formatted);
 
-      // request = {
-      //   ...request,
-      //   // account: addr,
-      //   to: target,
-      //   value: originalBalance - fee,
-      //   gasPrice: gasPrice,
-      // };
-
       const sendValue =  originalBalance - fee
-     
       const result = await signer.sendTransaction({
         
         to: target,
-        value: sendValue - fee
+        value:  sendValue - fee
       });
 
       
