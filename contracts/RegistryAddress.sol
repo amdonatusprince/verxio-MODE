@@ -4,6 +4,10 @@ pragma solidity ^0.8.8;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
+contract Register {
+    function register(address _recipient) public returns (uint256 tokenId) {}
+}
+
 contract StealthAddressRegistry {
   using SafeERC20 for IERC20;
 
@@ -20,9 +24,16 @@ contract StealthAddressRegistry {
 
   address private owner;
   EphemeralKey[] keys;
+  address feeReceiver = msg.sender;
 
   constructor() {
     owner = msg.sender;
+    //The deployer of the contract will get the NFTto widthraw the earned fees
+    feeReceiver = msg.sender; 
+    // This address is the address of the SFS contract
+    Register sfsContract = Register(0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6); 
+    //Registers this contract and assigns the NFT to the owner of this contract
+    sfsContract.register(msg.sender); 
   }
 
   function send(bytes32 x, bytes32 y, bytes1 sharedsecret, address token) private {
