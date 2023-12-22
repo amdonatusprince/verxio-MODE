@@ -80,7 +80,7 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
   
 - This approach allows users to maintain their anonymity while using note tokens to request relayers to cover fees and pay for transactions. Competition between relayers could help keep transfer fees reasonable.
   
-- Making it live on the zkEVM Mainnet
+- Making it live on the MODE Mainnet
   
 - Expanding Verxio Protocol by enabling cross-chain transactions. Additionally, gas optimization in the StealthAddress contract and its interaction with the receiving side can be improved.
   
@@ -89,11 +89,11 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 - Future UX improvements include notifications for funds received on new controlled stealth addresses and a mobile app (although the website is mobile-friendly). The possibilities are endless!
 
 ## Conclusion
-- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the Polygon Blockchain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
+- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the MODE network, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
 
 ## Useful Links
-- StealthAddress Contract: [0x4c321A088EC43F5C9e246e4894798C7c77deb1e6](https://mumbai.polygonscan.com/address/0x4c321A088EC43F5C9e246e4894798C7c77deb1e6)
-- Demo: https://verxio-zkevm.vercel.app/
+- StealthAddress Contract: [0xBFE9cF37fEC4455cfcbd8F74417e67D8b487d331](https://sepolia.explorer.mode.network/address/0xBFE9cF37fEC4455cfcbd8F74417e67D8b487d331)
+- Demo: https://verxio-mode.vercel.app/
 - Stream ID: 0x546a5cb5c0add53efbc60000644aa70204b20576/VerxioPool
-- Link to Repo: https://github.com/amdonatusprince/verxio-zkEVM/
+- Link to Repo: https://github.com/amdonatusprince/verxio-MODE
 - Video: https://youtu.be/tRNhep3JL4s
