@@ -96,4 +96,4 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 - Demo: https://verxio-mode.vercel.app/
 - Stream ID: 0x546a5cb5c0add53efbc60000644aa70204b20576/VerxioPool
 - Link to Repo: https://github.com/amdonatusprince/verxio-MODE
-- Video: https://youtu.be/tRNhep3JL4s
+- Video: https://youtu.be/ATkA5VOQYx8
