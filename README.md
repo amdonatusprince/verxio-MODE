@@ -1,10 +1,10 @@
-## Verxio zkEVM
-Verxio Protocol is a non-custodial solution that uses stealth addresses to enable users to receive crypto on Polygon zkEVM without revealing the receiver's real address; which serves as their identity on the blockchain.
+## Verxio MODE
+Verxio Protocol is a non-custodial solution that uses stealth addresses to enable users to receive crypto on MODE without revealing the receiver's real address; which serves as their identity on the blockchain.
 
 Verxio is heavily inspired by [Vitalik's recent article on stealth addresses](https://vitalik.eth.limo/general/2023/01/20/stealth.html).
 
 ## Project Overview
-Have you ever wished you could send and receive funds without anyone snooping around your business? Well, say hello to Verxio Protocol – your privacy guardian on Polygon zkEVM. We’re tackling the issue of exposing personal info during transactions by introducing stealth addresses. 
+Have you ever wished you could send and receive funds without anyone snooping around your business? Well, say hello to Verxio Protocol – your privacy guardian on MODE. We’re tackling the issue of exposing personal info during transactions by introducing stealth addresses. 
 
 - The project draws inspiration from existing privacy-focused blockchains like Monero and tools like Tornado Cash but aims to bridge the gap between complex and expensive privacy solutions and non-private transfers.
 
@@ -28,7 +28,7 @@ Have you ever wished you could send and receive funds without anyone snooping ar
 - Significance: Addressing this issue assumes paramount importance due to its direct impact on safeguarding financial confidentiality. Preserving the integrity of personal and corporate information from prying eyes is central. By introducing a user-centric solution that leverages stealth addresses for anonymous transactions, Verxio Protocol empowers users to regain control over their financial privacy and alleviate the potential pitfalls linked with identity exposure.
 
 ### ✒ Technical Description
-- Verxio Protocol implements stealth addresses on Polygon zkEVM using a combination of cryptographic techniques to ensure transaction security and user privacy. Let’s break down the key steps and encryption methods involved:
+- Verxio Protocol implements stealth addresses on MODE using a combination of cryptographic techniques to ensure transaction security and user privacy. Let’s break down the key steps and encryption methods involved:
 
 - Stealth Addresses Generation:
     The receiver generates a root spending key (receiver private key) and computes a stealth meta-address (receiver public key or receiver’s address) using elliptic curve cryptography. This stealth meta-address (receiver’s address) becomes a publicly known identifier for the receiver on the blockchain.
@@ -63,11 +63,11 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 
 ## Implementation
 - We have started with a standard Hardhat project and added essential methods to the StealthAddress contract. To enhance credibility, we intentionally avoided making the contract upgradeable, as there's no on-chain governance currently. If an upgrade is needed, we'll deploy a new version and provide client-side support.
-- Next, we developed the UI/UX using React and TypeScript, focusing on a simple yet elegant design for both power and non-power users. The UI colors and feel are built with the Polygon zkEVM in mind.
+- Next, we developed the UI/UX using React and TypeScript, focusing on a simple yet elegant design for both power and non-power users. The UI colors and feel are built with the MODE in mind.
 - We used the Wagmi library for blockchain interactions which streamlined the process.
 - The elliptic library handled the complex math involved with elliptic curves, and both libraries featured TypeScript typings, making them a joy to work with.
 - We used Streamr Client to store all user transactions in a Data Pool on Streamr Hub
-- Tools Used: Solidity, Hardhat, Polygon zkEVM, React, Typescript, Wagmi and Metamask.
+- Tools Used: Solidity, Hardhat, MODE SFS, React, Typescript, Wagmi and Metamask.
 
 
 ## Challenges
@@ -76,7 +76,7 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 
 
 ## What's next?
-- Currently, Verxio Protocol only supports native coin transfers(MATIC). However, adding support for tokens and NFTs would greatly enhance its utility. We are considering implementing relayer nodes to mint and sell notes as tokens (or NFTs) in exchange for covering user fees on transfers.
+- Currently, Verxio Protocol only supports native coin transfers(ETH). However, adding support for tokens and NFTs would greatly enhance its utility. We are considering implementing relayer nodes to mint and sell notes as tokens (or NFTs) in exchange for covering user fees on transfers.
   
 - This approach allows users to maintain their anonymity while using note tokens to request relayers to cover fees and pay for transactions. Competition between relayers could help keep transfer fees reasonable.
   
